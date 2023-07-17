@@ -1,0 +1,136 @@
+@import '../theme/color.scss';
+
+.sidebar{
+  background-color:$white ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 1rem;
+  width: 16rem;
+  height: 92vh;
+  background-color: $lightblue;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: 0.5s all;
+
+  .logoContainer{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+  h2.title{
+  font-size: 31.43px;
+  padding: 0 0 0 10px;
+}
+}
+
+.burgerContainer{
+  content: '';
+  color: $white;
+  background-color: $darkblue;
+  position: absolute;
+  right: calc(-35px/2);
+  top: calc(9rem/1.15);
+  width: 35px;
+  height: 35px;
+  border-radius: 2rem;
+  z-index: 1;
+
+}
+
+.burgerContainer::after{
+  content: '';
+  position: absolute;
+  right: 35px;
+  top: calc(35px/2);
+  z-index: 0;
+  width: calc(6rem + 15rem);
+  background-color: $white;
+  height: 2px;
+
+}
+
+.profileContainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding:3.5rem 0 0 0.2rem ;
+  img{
+    width: auto;
+    height: 3rem;
+  }
+  .profileContents{
+  padding: 0 0 0 1rem;
+  p.name{
+  padding: 0;
+  margin: 0;
+  font-size: 16.7px;
+  color: $darkblue;
+  text-transform: capitalize;
+  font-weight: 500;
+  }
+  p{
+    padding: 0;
+    margin:0;
+    font-size:13.9px;
+    text-transform: lowercase;
+
+  }
+
+}
+}
+.contentsContainer{
+  margin: 2rem 0 0 0;
+  height: 70%;
+}
+
+}
+
+.sidebar.active{
+  width:3.5rem ;
+  transition: .5s all;
+  .logoContainer.active{
+    h2.title{
+      opacity: 0;
+    }
+  }
+  .burgerContainer.active{
+    transition: 0.5s all;
+    .burgerMenu{
+      background-color: $white;
+      transition: 0.5s all;
+    }
+    .burgerMenu::before{
+      transform: translateY(0rem)rotate(0deg);
+      transition: 0.5s all;
+    }
+     .burgerMenu::after{
+      transform: translateY(0rem)rotate(0deg);
+      transition: 0.5s all;
+    }
+  }
+  .profileContainer{
+    .profileContents{
+      opacity: 0;
+    }
+  }
+  .contentsContainer{
+    .title{
+      opacity: 0;
+    }
+ .icon{
+  text-align: center;
+  margin-left: 47px;
+ }
+ .icon2{
+  display: none;
+ }
+
+  }
+
+
+}
+
+.themeContainer{
+  background-color: $white;
+}

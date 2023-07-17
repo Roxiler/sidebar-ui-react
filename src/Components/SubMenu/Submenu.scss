@@ -1,0 +1,70 @@
+@import '../../theme/color.scss';
+
+
+.subMenuContainer{
+  display: flex;
+  gap: 25px;
+  line-height: 50px;
+   border-radius: .5rem;
+   padding-left: 15px;
+   justify-content: center;
+    margin: 10px 0;
+   align-items: center;
+   &:hover{
+      background-color: $white;
+   }
+  }
+  // .subMenuContainer:hover{
+  //  background-color: $white;
+  // }
+.collapseMenu{
+  display:none
+
+}
+.showCollapse{
+  display: block;
+  height: auto;
+}
+  .icon{
+    font-size: 25px;
+    color: $darkblue;
+  }
+  .icon {
+  position: relative;
+  display: inline-block;
+}
+
+.icon .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:$darkblue;
+   color: $white;
+  font-size: 18.5px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 130%;
+}
+
+.icon .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent $darkblue transparent transparent;
+}
+.icon:hover .tooltiptext {
+  visibility: visible;
+}
+
+  .icon2{
+    font-size: 30px;
+    color: $darkblue;
+  }
+
