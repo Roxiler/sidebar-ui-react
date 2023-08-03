@@ -8,6 +8,7 @@ interface IProps {
   path:string;
   className?: string;
   children?:any
+  subMenu?:any
 }
 
 const MenuItem:React.FC<IProps>=({className,children,...props})=>{

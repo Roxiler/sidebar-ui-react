@@ -1,9 +1,9 @@
 import React from 'react'
-import * as FaIcons from 'react-icons/fa'
 import Icon from './icon/home'
 import Team from './icon/Team'
 import Analytics from './icon/Analytics'
 import Task from './icon/Task'
+import DotIcon from './icon/DotIcon'
 
 interface IProps{
   title:string,
@@ -16,7 +16,7 @@ export const SidebarData :IProps[] = [
   {
     title: 'Home',
     path: '/',
-    icon: <Icon size={30}/>,
+    icon: <Icon color='#235c71' size={30}/>,
 
   },
   {
@@ -30,18 +30,22 @@ export const SidebarData :IProps[] = [
     icon: <Task />,
     subtasks:[
       {
+        icon:<DotIcon/>,
         value:'Task 1',
         subpath:'tasks/task1'
       },
       {
+        icon: <DotIcon />,
         value: 'Task 2',
         subpath: 'tasks/task2'
       },
       {
+        icon: <DotIcon />,
         value: 'Task 3',
         subpath: 'tasks/task3'
       },
       {
+        icon: <DotIcon />,
         value: 'Task 4',
         subpath: 'tasks/task4'
       }

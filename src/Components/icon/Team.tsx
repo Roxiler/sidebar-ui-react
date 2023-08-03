@@ -4,11 +4,10 @@ import {IconProps} from './Icon.types'
 const Team = ({color, size = 30}: IconProps) => {
   return (
     <svg
-      style={{paddingTop: '12px'}} width={size} height={size} fill='#235c71'
+      style={{paddingTop: '12px'}} width={size} height={size} className='icon'
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
       viewBox="0 0 100 100"
-      // {...props}
     >
       <path d="M57 44H45c-3.3 0-6 2.7-6 6v9c0 1.1.5 2.1 1.2 2.8.7.7 1.7 1.2 2.8 1.2v9c0 3.3 2.7 6 6 6h4c3.3 0 6-2.7 6-6v-9c1.1 0 2.1-.4 2.8-1.2.7-.7 1.2-1.7 1.2-2.8v-9c0-3.3-2.7-6-6-6z" />
       <circle cx={51} cy={33} r={7} />

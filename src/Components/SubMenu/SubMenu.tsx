@@ -30,8 +30,8 @@ const SubMenu:React.FC<SubMenuProps>=({className,children,...props})=>{
   return(
     <>
     <div>
-        <div className={`subMenuContainer`} onClick={handleShow} >
-          <div className={`icon`}><Data /><span className="tooltiptext">{props.label}</span></div>
+        <div className={'subMenuContainer'} onClick={handleShow} >
+          <div className={'Submenuicon'}><Data /><span className="tooltiptext">{props.label}</span></div>
         <div className='title'>{props.label}</div>
         <div className='icon2'><DownArrow/></div>
     </div>

@@ -10,7 +10,6 @@
 }
 
   .title{
-    // color: $darkblue;
     color: var(--fontColor);
     display: flex;
     align-items: center;
@@ -35,13 +34,14 @@
     width: 100%;
     margin: 10px 0;
     line-height: 50px;
-  }
-  li:hover{
-    background-color: $white;
+    &:hover{
+      background-color: var(--containerBackground);
+    }
   }
 
+
     li.active{
-    background-color: $white;
+    background-color:var(--containerBackground);
   }
  .icon {
   position: relative;
@@ -50,7 +50,7 @@
 
 .icon .tooltiptext {
   visibility: hidden;
-  width: auto;
+  width: 110px;
   background-color:$darkblue;
   color: $white;
   font-size: 18.5px;

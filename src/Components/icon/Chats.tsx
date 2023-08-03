@@ -1,17 +1,15 @@
 import React from 'react'
 import {IconProps} from './Icon.types'
 
-const Chats = ({color, size = 25}: IconProps) => {
+const Chats = ({color, size = 28}: IconProps) => {
   return (
-    <svg style={{marginTop: '10px'}} width={size} height={size} color='#235c71'
+    <svg
+      style={{marginTop: '10px'}}
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      // {...props}
+      viewBox="0 0 256.001 256.001"
+      width={size}
     >
-      <g stroke="#1C274C" strokeLinecap="round" strokeWidth={1.5}>
-        <path d="M8 10.5h8M8 14h5.5M17 3.338A9.954 9.954 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.591l2.226-.595a1.634 1.634 0 0 1 1.149.133A9.958 9.958 0 0 0 12 22c5.523 0 10-4.477 10-10 0-1.821-.487-3.53-1.338-5" />
-      </g>
+      <path d="M236 96a20.023 20.023 0 0 0-20-20h-27.999V48a20.023 20.023 0 0 0-20-20h-128a20.023 20.023 0 0 0-20 20v128a12 12 0 0 0 19.544 9.332L68 162.328V184a20.023 20.023 0 0 0 20 20h92.173l36.283 29.332A12 12 0 0 0 236.001 224ZM44.001 150.868V52h120v35.981l-.001.02.001.019V132H71.583a11.999 11.999 0 0 0-7.544 2.668Zm147.96 31.8a11.999 11.999 0 0 0-7.543-2.668H92.001v-24h76a20.023 20.023 0 0 0 20-20v-36H212l.001 98.868Z" />
     </svg>
   )
 }

@@ -11,12 +11,9 @@
     margin: 10px 0;
    align-items: center;
    &:hover{
-      background-color: $white;
+      background-color: var(--containerBackground);
    }
   }
-  // .subMenuContainer:hover{
-  //  background-color: $white;
-  // }
 .collapseMenu{
   display:none
 
@@ -24,17 +21,19 @@
 .showCollapse{
   display: block;
   height: auto;
-}
-  .icon{
-    font-size: 25px;
-    color: $darkblue;
-  }
-  .icon {
-  position: relative;
-  display: inline-block;
-}
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+border-radius: 8px;
 
-.icon .tooltiptext {
+}
+  .Submenuicon{
+    font-size: 25px;
+    color: var(--fontColor);
+    position: relative;
+    display: inline-block;
+    margin-top: 4px;
+  }
+
+.Submenuicon .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color:$darkblue;
@@ -49,7 +48,7 @@
   left: 130%;
 }
 
-.icon .tooltiptext::after {
+.Submenuicon .tooltiptext::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -59,12 +58,11 @@
   border-style: solid;
   border-color: transparent $darkblue transparent transparent;
 }
-.icon:hover .tooltiptext {
+.Submenuicon:hover .tooltiptext {
   visibility: visible;
 }
 
   .icon2{
     font-size: 30px;
-    color: $darkblue;
   }
 
