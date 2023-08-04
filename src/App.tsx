@@ -54,9 +54,10 @@ function App() {
       avatar={profilelogo}
       headerImage='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmg6VbQr7k4bE8m1sGjODK19nEZn-UKVChBg&usqp=CA'
       heading='Sidebar'
-      theme='light' email='jhondoe@gmail.com' name='Jhon Doe'collapse={toggle} dividerColor='white'  />
-      <div className={toggle === true ? 'righthamburger' : 'lefthamburger'}>
+      theme='light' email='jhondoe@gmail.com' name='Jhon Doe'collapse={toggle} dividerColor='white'
+       />
 
+      <div className={toggle === true ? 'righthamburger' : 'lefthamburger'}>
         <div className={toggle === true ? 'burgerContainer' : 'burgerContainer active'} onClick={handleToggle}>
           <BurgerIcon hideToggleIcon={false} />
         </div>

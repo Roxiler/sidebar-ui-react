@@ -1,6 +1,5 @@
 import React, {useLayoutEffect, useState} from 'react'
 import ProfileDetails from '../Components/ProfileDetails/index'
-import profilelogo from '../assets/profile-circle.512x512-removebg-preview.png'
 import '../styles/sidebar.scss'
 import HeaderImage from './HeaderImage/HeaderImage'
 import MenuItem from './MenuItem/MenuItem'
@@ -12,7 +11,6 @@ type SidebarProps = {
   fontColor?: string
   backgroundColor?: string
   hoverContainerBackground?:string
-  headerImg?: string
   heading?: string
   name?: string,
   email?: string,
