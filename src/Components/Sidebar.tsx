@@ -17,7 +17,6 @@ type SidebarProps = {
   name?: string,
   email?: string,
   avatar?: string
-  subMenuLabel?: string
   collapse?: boolean
   dividerColor?: string
   theme?: 'light' | 'dark'
