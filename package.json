@@ -1,6 +1,6 @@
 {
   "name": "sidebar-ui-react",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "main": "build/index.js",
   "module": "build/index.js",
