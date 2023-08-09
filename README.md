@@ -14,10 +14,19 @@ React Sidebar
 - Using Yarn
   `yarn add sidebar-ui-react `
 
+## Checkout the below video for refrence.
 
+
+https://github.com/Roxiler/sidebar-ui-react/assets/97351159/190e633c-2981-430c-bafb-9c1abae3f77d
 
   # Basic Usage of Sidebar
+
+
 ```
+
+https://github.com/Roxiler/sidebar-ui-react/assets/97351159/2fffcbc8-0e09-40fb-ac8c-ffdf76c89acb
+
+
   import {Sidebar} from "react-sidebar"
 
   const menus = [
@@ -95,6 +104,10 @@ React Sidebar
           <BurgerIcon hideToggleIcon={false} />
         </div>
       </div>
+
+
+
+
 </div>
 
 ```
