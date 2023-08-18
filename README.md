@@ -17,7 +17,8 @@ React Sidebar
 ## Checkout the below video for refrence.
 
 
-https://github.com/Roxiler/sidebar-ui-react/assets/97351159/190e633c-2981-430c-bafb-9c1abae3f77d
+![Recording 2023-08-09 190611](https://github.com/Roxiler/sidebar-ui-react/assets/97351159/9caa2890-b604-40b6-ae02-769d9fa86f5c)
+
 
   # Basic Usage of Sidebar
 
